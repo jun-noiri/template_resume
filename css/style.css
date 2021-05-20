@@ -164,6 +164,7 @@ header .header-container .menu {
 main #about .name {
   font-size: 6rem;
   font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
 }
 
 main #about .address {
@@ -268,7 +269,7 @@ main #awards .section-content .awards-lists ul li i {
     min-height: unset;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 4rem;
+    padding-left: 1rem;
     padding-right: 1rem;
   }
   .wrapper-inner {
