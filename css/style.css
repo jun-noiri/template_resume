@@ -36,8 +36,8 @@ span {
 .grid-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 85%;
-      grid-template-columns: 15% 85%;
+  -ms-grid-columns: 22% 78%;
+      grid-template-columns: 22% 78%;
   -ms-grid-rows: 100% 100%;
       grid-template-rows: 100% 100%;
 }
@@ -100,7 +100,7 @@ span {
 }
 
 header .header-container {
-  min-width: 12rem;
+  min-width: 15rem;
   background-color: #46166b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,8 +120,8 @@ header .header-container {
   left: 0;
   bottom: 0;
   z-index: 100;
-  padding-right: 0.1rem;
-  padding-left: 0.1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
 }
@@ -163,14 +163,13 @@ header .header-container .menu {
 
 main #about .name {
   font-size: 6rem;
-  padding-bottom: 0.7rem;
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
 main #about .address {
   color: #707070;
   font-size: 1.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
@@ -269,7 +268,7 @@ main #awards .section-content .awards-lists ul li i {
     min-height: unset;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 1rem;
+    padding-left: 4rem;
     padding-right: 1rem;
   }
   .wrapper-inner {

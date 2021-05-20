@@ -35,7 +35,7 @@ span {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 22% 78%;
   grid-template-rows: 100% 100%;
 }
 
@@ -93,7 +93,7 @@ span {
 // -------- header ---------- //
 header {
   .header-container {
-    min-width: 12rem;
+    min-width: 15rem;
     background-color: #46166b;
     display: flex;
     flex-direction: column;
@@ -104,8 +104,8 @@ header {
     left: 0;
     bottom: 0;
     z-index: 100;
-    padding-right: 0.1rem;
-    padding-left: 0.1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     font-family: "Mulish", sans-serif;
     font-weight: bold;
     .header-name {
@@ -151,13 +151,12 @@ main {
   #about {
     .name {
       font-size: 6rem;
-      padding-bottom: 0.7rem;
       font-family: "Saira Extra Condensed", sans-serif;
     }
     .address {
       color: #707070;
       font-size: 1.5rem;
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
       font-family: "Saira Extra Condensed", sans-serif;
       a {
         color: #46166b;
@@ -263,7 +262,7 @@ main {
     min-height: unset;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 1rem;
+    padding-left: 4rem;
     padding-right: 1rem;
   }
 
