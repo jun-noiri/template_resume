@@ -1,0 +1,404 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #707070;
+  font-family: "Mulish", sans-serif;
+}
+
+span {
+  color: #46166b;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  -ms-grid-rows: 100% 100%;
+      grid-template-rows: 100% 100%;
+}
+
+.section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2rem;
+  color: #343a40;
+  font-family: "Saira Extra Condensed", sans-serif;
+  line-height: 1.2;
+}
+
+.subheading {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.element-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.element-flex .sub-element-right .date {
+  color: #46166b;
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif;
+  white-space: nowrap;
+}
+
+header .header-container {
+  min-width: 12rem;
+  background-color: #46166b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}
+
+header .header-container .header-name {
+  display: none;
+}
+
+header .header-container .nav-img {
+  margin-bottom: 2rem;
+}
+
+header .header-container .nav-img img {
+  border-radius: 50%;
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+header .header-container .nav-wrapper .header-nav .nav-list .nav-item {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+header .header-container .nav-wrapper .header-nav .nav-list .nav-item a {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+header .header-container .nav-wrapper .header-nav .nav-list .nav-item a:hover {
+  color: #ffffff;
+}
+
+header .header-container .menu {
+  display: none;
+}
+
+main #about .name {
+  font-size: 6rem;
+  padding-bottom: 0.7rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+main #about .address {
+  color: #707070;
+  font-size: 1.5rem;
+  padding-bottom: 4rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+main #about .address a {
+  color: #46166b;
+}
+
+main #about .address a:hover {
+  text-decoration: underline;
+}
+
+main #about .job-title {
+  font-size: 1.15rem;
+  font-family: "Mulish", sans-serif;
+}
+
+main #about .social-icons {
+  margin-top: 5rem;
+}
+
+main #about .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #about .social-icons ul li {
+  background-color: #495057;
+  height: 3.5rem;
+  width: 3.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-radius: 100%;
+}
+
+main #about .social-icons ul li a {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+main #about .social-icons ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+main #about .social-icons ul li:hover {
+  background-color: #46166b;
+}
+
+main #skills .section-content .section-element .icon-lists ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #skills .section-content .section-element .icon-lists ul li {
+  color: #707070;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+main #skills .section-content .section-element .workflow-lists ul li {
+  color: #707070;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+main #skills .section-content .section-element .workflow-lists ul li i {
+  padding-right: 0.5rem;
+}
+
+main #awards .section-content .awards-lists ul li {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #707070;
+}
+
+main #awards .section-content .awards-lists ul li i {
+  color: #ffc107;
+  padding-right: 0.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 1.2rem;
+    line-height: 2;
+    width: 100%;
+  }
+  .grid-wrapper {
+    -ms-grid-rows: 1% 99%;
+        grid-template-rows: 1% 99%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .section-container {
+    min-height: unset;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .wrapper-inner {
+    max-width: unset;
+    width: 100%;
+  }
+  .element-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-bottom: 3rem;
+  }
+  .element-flex .sub-element-right .date {
+    color: #46166b;
+    font-size: 1rem;
+    font-family: "Mulish", sans-serif;
+    white-space: nowrap;
+  }
+  header .header-container {
+    min-width: unset;
+    height: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    right: 0;
+    bottom: unset;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  header .header-container .header-name {
+    display: block;
+  }
+  header .header-container .header-name a {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  header .header-container .nav-img {
+    display: none;
+  }
+  header .header-container .nav-wrapper {
+    display: none;
+  }
+  header .header-container .menu {
+    display: block;
+    width: 1rem;
+    padding: 0.2rem;
+  }
+  header .header-container .menu label {
+    display: block;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+  header .header-container .menu input {
+    display: none;
+  }
+  header .header-container .menu ul {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #46166b;
+  }
+  header .header-container .menu ul li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .header-container .menu ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+  header .header-container .menu #menu_bar01:checked ~ #links01 li {
+    height: 3rem;
+    opacity: 1;
+  }
+  main #about .name {
+    padding-bottom: 0.7rem;
+  }
+  main #about .address {
+    padding-bottom: 3rem;
+  }
+  main #about .job-title {
+    font-size: 1.15rem;
+    font-family: "Mulish", sans-serif;
+  }
+  main #about .social-icons {
+    margin-top: 5rem;
+  }
+  main #skills .section-content .section-element .icon-lists ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #skills .section-content .section-element .icon-lists ul li {
+    color: #707070;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+  }
+  main #skills .section-content .section-element .workflow-lists ul li {
+    color: #707070;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  main #skills .section-content .section-element .workflow-lists ul li i {
+    padding-right: 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,416 @@
+// --------- base --------- //
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #707070;
+  font-family: "Mulish", sans-serif;
+}
+
+span {
+  color: #46166b;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 100% 100%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2rem;
+  color: #343a40;
+  font-family: "Saira Extra Condensed", sans-serif;
+  line-height: 1.2;
+}
+
+.subheading {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.element-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  .sub-element-left {
+    // width: 34rem;
+  }
+  .sub-element-right {
+    // width: 14rem;
+    .date {
+      color: #46166b;
+      font-size: 1rem;
+      font-family: "Mulish", sans-serif;
+      white-space: nowrap;
+    }
+  }
+}
+
+// -------- header ---------- //
+header {
+  .header-container {
+    min-width: 12rem;
+    background-color: #46166b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    .header-name {
+      display: none;
+    }
+    .nav-img {
+      margin-bottom: 2rem;
+      img {
+        border-radius: 50%;
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+      }
+    }
+    .nav-wrapper {
+      .header-nav {
+        .nav-list {
+          .nav-item {
+            padding-bottom: 1.5rem;
+            text-align: center;
+            a {
+              color: rgba(255, 255, 255, 0.5);
+              font-weight: 800;
+              letter-spacing: 0.05rem;
+              text-transform: uppercase;
+            }
+            a:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}
+
+// -------- main ----------- //
+main {
+  // ------ about --------- //
+  #about {
+    .name {
+      font-size: 6rem;
+      padding-bottom: 0.7rem;
+      font-family: "Saira Extra Condensed", sans-serif;
+    }
+    .address {
+      color: #707070;
+      font-size: 1.5rem;
+      padding-bottom: 4rem;
+      font-family: "Saira Extra Condensed", sans-serif;
+      a {
+        color: #46166b;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .job-title {
+      font-size: 1.15rem;
+      font-family: "Mulish", sans-serif;
+    }
+    .social-icons {
+      margin-top: 5rem;
+      ul {
+        display: flex;
+        li {
+          background-color: #495057;
+          height: 3.5rem;
+          width: 3.5rem;
+          text-align: center;
+          line-height: 3.5rem;
+          border-radius: 100%;
+          a {
+            color: #ffffff;
+            font-size: 1.5rem;
+          }
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+          &:hover {
+            background-color: #46166b;
+          }
+        }
+      }
+    }
+  }
+  // ------ skills --------- //
+  #skills {
+    .section-content {
+      .section-element {
+        .icon-lists {
+          ul {
+            display: flex;
+            li {
+              color: #707070;
+              font-size: 3rem;
+              margin-bottom: 2rem;
+              padding-right: 2rem;
+            }
+          }
+        }
+        .workflow-lists {
+          ul {
+            li {
+              color: #707070;
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+              i {
+                padding-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ------ awards ---------- //
+  #awards {
+    .section-content {
+      .awards-lists {
+        ul {
+          li {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #707070;
+            i {
+              color: #ffc107;
+              padding-right: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------- media query -------- //
+@media screen and (max-width: 1200px) {
+  // --------- base --------- //
+  p {
+    font-size: 1.2rem;
+    line-height: 2;
+    width: 100%;
+  }
+
+  .grid-wrapper {
+    grid-template-rows: 1% 99%;
+    grid-template-columns: 100%;
+  }
+
+  .section-container {
+    min-height: unset;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .wrapper-inner {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .element-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin-bottom: 3rem;
+    .sub-element-left {
+      // width: 34rem;
+    }
+    .sub-element-right {
+      // width: 14rem;
+      .date {
+        color: #46166b;
+        font-size: 1rem;
+        font-family: "Mulish", sans-serif;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  // -------- header ---------- //
+  header {
+    .header-container {
+      min-width: unset;
+      height: 3rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: none;
+      right: 0;
+      bottom: unset;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      .header-name {
+        display: block;
+        a {
+          color: #fff;
+          font-size: 1.25rem;
+        }
+      }
+      .nav-img {
+        display: none;
+      }
+      .nav-wrapper {
+        display: none;
+      }
+      // burger-menu
+      .menu {
+        display: block;
+        width: 1rem;
+        padding: 0.2rem;
+        label {
+          display: block;
+          line-height: 1;
+          color: #fff;
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          position: fixed;
+          top: 3rem;
+          right: 0;
+          left: 0;
+          width: 100%;
+          background-color: #46166b;
+          li {
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            a {
+              display: block;
+              padding: 15px;
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+        #menu_bar01:checked ~ #links01 li {
+          height: 3rem;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // -------- main ----------- //
+  main {
+    // ------ about --------- //
+    #about {
+      .name {
+        padding-bottom: 0.7rem;
+      }
+      .address {
+        padding-bottom: 3rem;
+      }
+      .job-title {
+        font-size: 1.15rem;
+        font-family: "Mulish", sans-serif;
+      }
+      .social-icons {
+        margin-top: 5rem;
+      }
+    }
+    // ------ skills --------- //
+    #skills {
+      .section-content {
+        .section-element {
+          .icon-lists {
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              li {
+                color: #707070;
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                padding-right: 2rem;
+              }
+            }
+          }
+          .workflow-lists {
+            ul {
+              li {
+                color: #707070;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                i {
+                  padding-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
